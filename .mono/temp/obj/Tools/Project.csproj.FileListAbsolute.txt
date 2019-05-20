@@ -4,3 +4,9 @@ D:\GitHub\Project\.mono\temp\obj\Tools\Project.csprojResolveAssemblyReference.ca
 D:\GitHub\Project\.mono\temp\obj\Tools\Project.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\.mono\temp\obj\Tools\Project.dll
 D:\GitHub\Project\.mono\temp\obj\Tools\Project.pdb
+D:\GitHub\GodotGame\.mono\temp\bin\Tools\Project.dll
+D:\GitHub\GodotGame\.mono\temp\bin\Tools\Project.pdb
+D:\GitHub\GodotGame\.mono\temp\obj\Tools\Project.csprojResolveAssemblyReference.cache
+D:\GitHub\GodotGame\.mono\temp\obj\Tools\Project.csproj.CoreCompileInputs.cache
+D:\GitHub\GodotGame\.mono\temp\obj\Tools\Project.dll
+D:\GitHub\GodotGame\.mono\temp\obj\Tools\Project.pdb
