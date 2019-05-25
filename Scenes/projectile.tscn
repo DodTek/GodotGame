@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://testprojectile.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Untitled-1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/sBullet_strip2_0000_Layer-1.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -11,14 +11,19 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 21.6909
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 4.95134
+height = 9.6926
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 18.0684, -1.38987 )
+position = Vector2( 0.379477, -1.38987 )
+scale = Vector2( 0.744085, 1 )
 frames = SubResource( 1 )
 animation = "shoot"
 __meta__ = {
@@ -26,7 +31,11 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.14588, -1.19869 )
+rotation = 1.5708
 shape = SubResource( 2 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 1.28783, -0.858555 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
