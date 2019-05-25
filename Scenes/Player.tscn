@@ -37,10 +37,8 @@ radius = 14.0
 height = 22.0
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 0.277893, 2.89792 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -49,3 +47,15 @@ playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_smoothed = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+drag_margin_bottom = 0.21
+editor_draw_screen = false
+editor_draw_drag_margin = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 14.7703, 7.51031 )
