@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://meleeweapon.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/sGun.png" type="Texture" id=2]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 12.857, -3.34509, -9.11866, -4.32178, -13.2696, 2.02673, -13.2696, 4.22429, -10.2174, 4.22429, -8.50823, 3.2476, 13.8337, 3.61386 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

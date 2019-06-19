@@ -13,9 +13,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 974.0
+margin_left = 462.0
 margin_top = 269.0
-margin_right = 1074.0
+margin_right = 562.0
 margin_bottom = 331.0
 
 [node name="Name" type="Label" parent="CenterContainer/VBoxContainer"]
@@ -38,7 +38,7 @@ text = "Quit"
 [node name="ParallaxBackground" type="ParallaxBackground" parent="CenterContainer"]
 
 [node name="Sprite" type="Sprite" parent="CenterContainer/ParallaxBackground"]
-position = Vector2( 1040.91, 299.306 )
+position = Vector2( 1040.91, 295.876 )
 scale = Vector2( 1.08301, 0.537102 )
 texture = ExtResource( 2 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_Start_pressed"]

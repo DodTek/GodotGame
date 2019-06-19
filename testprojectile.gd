@@ -1,6 +1,6 @@
 extends Area2D
 
-const SPEED = 400
+const SPEED = 40
 var velocity = Vector2()
 var direction = 1
 # Called when the node enters the scene tree for the first time.
@@ -23,4 +23,8 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 
 func _on_Area2D_body_entered(body):
+	if "Enemy" in body.name:
+		print(body.name)	
+		body.dead()
+		
 	queue_free()

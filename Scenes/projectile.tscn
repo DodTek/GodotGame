@@ -1,19 +1,22 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://testprojectile.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/sBullet_strip2_0000_Layer-1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Bullet/Cowboy--copy_0004s_0003_Bullet-1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Bullet/Cowboy--copy_0004s_0002_Bullet-2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Bullet/Cowboy--copy_0004s_0001_Bullet-3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Bullet/Cowboy--copy_0004s_0000_Bullet-4.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "shoot",
-"speed": 5.0
+"speed": 5.01
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 4.95134
-height = 9.6926
+height = 0.783982
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 1 )
@@ -26,6 +29,8 @@ position = Vector2( 0.379477, -1.38987 )
 scale = Vector2( 0.744085, 1 )
 frames = SubResource( 1 )
 animation = "shoot"
+frame = 2
+playing = true
 __meta__ = {
 "_edit_group_": true
 }

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sPlayer_r_strip4.png-d89186c74a760c9f25cff342d005d98e.stex"
+path="res://.import/Cowboy--copy_0004s_0000_Bullet-4.png-5f7d0a53e8be64a7ebf934754c781f18.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/sPlayer_r_strip4.png"
-dest_files=[ "res://.import/sPlayer_r_strip4.png-d89186c74a760c9f25cff342d005d98e.stex" ]
+source_file="res://Sprites/FramesUpdated/Frames Sword Update/Character/Bullet/Cowboy--copy_0004s_0000_Bullet-4.png"
+dest_files=[ "res://.import/Cowboy--copy_0004s_0000_Bullet-4.png-5f7d0a53e8be64a7ebf934754c781f18.stex" ]
 
 [params]
 
