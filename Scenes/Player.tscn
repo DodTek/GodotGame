@@ -1,22 +1,22 @@
 [gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0003_PreJump1.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0002_PreJump2.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0001_JumpAir1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0000_JumpAir2.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0007_Run-1.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0006_Run-2.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0005_Run-3.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0004_Run-4.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0003_Run-5.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0002_Run-6.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0001_Run-7.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0000_Run-8.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0002_Iddle-1.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0001_Iddle-2.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0000_Iddle-3.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Falling/Cowboy--copy_0002s_0000_Falling.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0007_Run-1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0006_Run-2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0005_Run-3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0004_Run-4.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0003_Run-5.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0002_Run-6.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0001_Run-7.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Run/Cowboy--copy_0006s_0000_Run-8.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Falling/Cowboy--copy_0002s_0000_Falling.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0002_Iddle-1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0001_Iddle-2.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Iddle/Cowboy--copy_0007s_0000_Iddle-3.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0003_PreJump1.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0002_PreJump2.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0001_JumpAir1.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Jump/Cowboy--copy_0003s_0000_JumpAir2.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/sDead_strip2_0001_Layer-0.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Gun/Shooting/Cowboy--copy_0005s_0000_Gun-2.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/FramesUpdated/Frames Sword Update/Character/Gun/Shooting/Cowboy--copy_0005s_0001_Gun-1.png" type="Texture" id=20]
@@ -30,24 +30,24 @@ animations = [ {
 "name": "wall_slide",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "run",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "idel",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 17 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
-"name": "fall",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 18 ) ],

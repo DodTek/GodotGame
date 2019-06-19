@@ -1,63 +1,67 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Sprites/tileSets/level2Tileset.tres" type="TileSet" id=3]
-[ext_resource path="res://Sprites/tileSets/durtTileSet2.tres" type="TileSet" id=4]
-[ext_resource path="res://Scenes/DartTrap.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Pitfall.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/WorldEnder.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/DartPlate.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Spike.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/rope.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprites/tileSets/level2Tileset.tres" type="TileSet" id=4]
+[ext_resource path="res://Sprites/tileSets/durtTileSet2.tres" type="TileSet" id=5]
+[ext_resource path="res://Scenes/DartTrap.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Pitfall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/WorldEnder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/DartPlate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Spike.tscn" type="PackedScene" id=10]
 
 [node name="World" type="Node"]
 
-[node name="Enemy3" parent="." instance=ExtResource( 1 )]
+[node name="Area2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 946.155, 547.87 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 274.2, 430.536 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 64, 256 )
 
 [node name="TileMap2" type="TileMap" parent="."]
 position = Vector2( 523.047, 128.124 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 32, 32 )
 cell_custom_transform = Transform2D( 1, 0, 0, 0, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 786424, 13, 0 )
 
-[node name="Enemy" parent="." instance=ExtResource( 1 )]
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 523.047, 128.124 )
 
-[node name="Enemy2" parent="." instance=ExtResource( 1 )]
+[node name="Enemy2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1551.05, 340.659 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 5 )
 cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( 0, 11, 0, 65, 11, 0, 65536, 11, 0, 65601, 11, 0, 131072, 11, 0, 131133, 25, 0, 131134, 25, 0, 131135, 25, 0, 131136, 39, 0, 131137, 11, 0, 196608, 11, 0, 196668, 25, 0, 196673, 11, 0, 262144, 11, 0, 262202, 25, 0, 262203, 25, 0, 262209, 11, 0, 327680, 11, 0, 327681, 11, 0, 327693, 25, 0, 327694, 25, 0, 327695, 25, 0, 327696, 25, 0, 327697, 25, 0, 327698, 25, 0, 327699, 31, 0, 327745, 11, 0, 393216, 11, 0, 393217, 11, 0, 393223, 25, 0, 393224, 25, 0, 393225, 25, 0, 393226, 31, 0, 393273, 25, 0, 393274, 25, 0, 393281, 11, 0, 458752, 11, 0, 458817, 11, 0, 524288, 11, 0, 524292, 36, 0, 524293, 25, 0, 524294, 31, 0, 524343, 25, 0, 524344, 25, 0, 524345, 25, 0, 524353, 11, 0, 589824, 11, 0, 589889, 11, 0, 655360, 11, 0, 655411, 25, 0, 655412, 25, 0, 655413, 25, 0, 655425, 11, 0, 720896, 11, 0, 720897, 11, 0, 720898, 11, 0, 720961, 11, 0, 786432, 11, 0, 786433, 11, 0, 786434, 11, 0, 786450, 36, 0, 786451, 25, 0, 786452, 31, 0, 786473, 36, 0, 786474, 25, 0, 786475, 25, 0, 786476, 25, 0, 786477, 25, 0, 786478, 25, 0, 786479, 25, 0, 786480, 25, 0, 786481, 31, 0, 786497, 11, 0, 851968, 11, 0, 851969, 11, 0, 851970, 11, 0, 851980, 36, 0, 851983, 31, 0, 852033, 11, 0, 917504, 11, 0, 917505, 11, 0, 917506, 11, 0, 917507, 11, 0, 917528, 36, 0, 917529, 31, 0, 917569, 11, 0, 983040, 11, 0, 983041, 11, 0, 983042, 11, 0, 983043, 11, 0, 983046, 36, 0, 983047, 25, 0, 983049, 25, 0, 983050, 31, 0, 983073, 36, 0, 983074, 25, 0, 983075, 25, 0, 983076, 25, 0, 983077, 25, 0, 983078, 25, 0, 983079, 31, 0, 983105, 11, 0, 1048576, 11, 0, 1048577, 11, 0, 1048578, 11, 0, 1048579, 11, 0, 1048641, 11, 0, 1114112, 11, 0, 1114113, 11, 0, 1114114, 11, 0, 1114115, 11, 0, 1114177, 11, 0, 1179648, 11, 0, 1179649, 11, 0, 1179650, 11, 0, 1179651, 11, 0, 1179652, 14, 0, 1179653, 19, 0, 1179654, 19, 0, 1179655, 19, 0, 1179656, 19, 0, 1179657, 19, 0, 1179658, 19, 0, 1179659, 0, 0, 1179661, 19, 0, 1179662, 19, 0, 1179663, 19, 0, 1179664, 19, 0, 1179665, 19, 0, 1179666, 19, 0, 1179667, 19, 0, 1179668, 20, 0, 1179669, 20, 0, 1179670, 20, 0, 1179671, 20, 0, 1179673, 20, 0, 1179674, 20, 0, 1179675, 20, 0, 1179676, 20, 0, 1179677, 12, 0, 1179678, 11, 0, 1179679, 11, 0, 1179680, 11, 0, 1179681, 11, 0, 1179682, 11, 0, 1179683, 11, 0, 1179684, 11, 0, 1179685, 11, 0, 1179686, 11, 0, 1179687, 11, 0, 1179688, 11, 0, 1179689, 11, 0, 1179690, 11, 0, 1179691, 11, 0, 1179692, 11, 0, 1179693, 11, 0, 1179694, 11, 0, 1179695, 11, 0, 1179696, 11, 0, 1179697, 11, 0, 1179698, 11, 0, 1179699, 11, 0, 1179700, 11, 0, 1179701, 11, 0, 1179702, 11, 0, 1179703, 11, 0, 1179704, 11, 0, 1179705, 11, 0, 1179706, 11, 0, 1179707, 11, 0, 1179708, 11, 0, 1179709, 11, 0, 1179710, 11, 0, 1179711, 11, 0, 1179712, 11, 0, 1179713, 11, 0 )
 
-[node name="DartTrap" parent="." instance=ExtResource( 5 )]
+[node name="DartTrap" parent="." instance=ExtResource( 6 )]
 position = Vector2( 766.391, 463.811 )
 
-[node name="DartTrap2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1054.24, 545.832 )
+[node name="DartTrap2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1077.02, 546.833 )
 
-[node name="Pitfall" parent="." instance=ExtResource( 6 )]
+[node name="Pitfall" parent="." instance=ExtResource( 7 )]
 position = Vector2( 180.049, 404.682 )
 
-[node name="WorldEnder" parent="." instance=ExtResource( 7 )]
+[node name="WorldEnder" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2013.69, 32.6316 )
 world_scene = "res://Scenes/World2.tscn"
 
-[node name="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Area2D" parent="." instance=ExtResource( 9 )]
 position = Vector2( 398.964, 586.906 )
 
-[node name="Area2D2" parent="." instance=ExtResource( 8 )]
+[node name="Area2D2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 783.63, 586.657 )
 
-[node name="Spike" parent="." instance=ExtResource( 9 )]
+[node name="Spike" parent="." instance=ExtResource( 10 )]
 position = Vector2( 278.131, 475.195 )
 [connection signal="body_shape_entered" from="Area2D" to="DartTrap" method="change_x"]
 [connection signal="body_shape_entered" from="Area2D2" to="DartTrap2" method="change_x"]

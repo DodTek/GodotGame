@@ -1,7 +1,7 @@
 #if animation issues with projectile clashing with other animations check https://youtu.be/pSv9_W1rGtI - 10 minutes in
 extends KinematicBody2D
 const UP = Vector2(0, -1)
-const GRAVITY = 20
+var GRAVITY = 20
 const MAX_SPEED = 200
 const ACCELERATION = 50
 const JUMP_HEIGHT = -500
@@ -10,6 +10,7 @@ const PROJECTILE = preload("res://Scenes/projectile.tscn")
 var motion = Vector2()
 var is_attacking = false
 var is_dead = false
+var on_rope = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
@@ -89,6 +90,21 @@ func _physics_process(delta):
 			for i in range(get_slide_count()):
 				if "Enemy" in get_slide_collision(i).collider.name:
 						dead()
+	
+		if on_rope == true:
+			GRAVITY = 0
+			motion.x = lerp(motion.x, 0, 0.07)
+			if Input.is_action_pressed("ui_up"):
+				motion.y = -ACCELERATION
+				
+			elif Input.is_action_pressed("ui_down"):
+				motion.y = ACCELERATION
+				
+			else:
+				motion.y = 0
+		else:
+			GRAVITY = 20
+	
 	else:
 		$Sprite.play("dead")
 		motion.y += GRAVITY
@@ -100,6 +116,11 @@ func dead():
 	is_dead = true
 	$Timer.start()
 	
+func on_rope():
+	on_rope = true
+	
+func off_rope():
+	on_rope = false
 func _on_Sprite_animation_finished():
 	is_attacking = false
 
